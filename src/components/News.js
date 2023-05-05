@@ -197,12 +197,13 @@ export class News extends Component {
       // articles: this.articles,
       articles: [],
       loading: false,
-      page: 1
+      page: 1,
+      pageSize : 15
     }
   }
 
   async componentDidMount(){
-    let url = 'https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page1&pageSize=9';
+    let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page1&pageSize=${this.state.pageSize}`;
     // console.log('url')
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -215,7 +216,7 @@ export class News extends Component {
 
   handlePrevCLick = async ()=>{
     console.log('prev')
-    let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page - 1}&pageSize=9`;
+    let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page - 1}&pageSize=${this.state.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -228,10 +229,10 @@ export class News extends Component {
   handleNextCLick = async ()=>{
     console.log('next')
 
-    if(this.state.page +1 > Math.ceil(this.state.totalResults/9)){
+    if(this.state.page +1 > Math.ceil(this.state.totalResults / this.state.pageSize)){
     }
     else{
-      let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page + 1}&pageSize=9`;
+      let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page + 1}&pageSize=${this.state.pageSize}`;
       let data = await fetch(url);
       let parsedData = await data.json();
       this.setState({
@@ -246,7 +247,7 @@ export class News extends Component {
     // console.log('ren')  
     return (
         <div className="container my-3">
-            <h2>News Spider - Top Headlines</h2>
+            <h1 className="text-center my-4">News Spider - Top Headlines</h1>
             <div className="row">
                 {this.state.articles.map((element) => {
                   return <div className="col-md-4 my-3" key={element.url}>
@@ -256,7 +257,7 @@ export class News extends Component {
             </div>
             <div className="d-flex justify-content-between">
               <button type="button" disabled={this.state.page<=1} className="btn btn-primary" onClick={this.handlePrevCLick}>&larr; Previous</button>
-              <button type="button" className="btn btn-primary" onClick={this.handleNextCLick}>Next &rarr;</button>
+              <button type="button" disabled={this.state.page+1 > Math.ceil(this.state.totalResults / this.state.pageSize)} className="btn btn-primary" onClick={this.handleNextCLick}>Next &rarr;</button>
             </div>
         </div>
     )
