@@ -1,7 +1,9 @@
 // 56f164ae46b74c39914c176a020f49fb
+// https://newsapi.org/v2/top-headlines?q=tech&from=2023-05-05&to=2023-05-05&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb
 // https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb
 // https://newsapi.org/v2/top-headlines?q=ipl&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb
 // https://newsapi.org/v2/top-headlines?q=stock&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb
+// &page=2
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
@@ -194,23 +196,55 @@ export class News extends Component {
     this.state = {
       // articles: this.articles,
       articles: [],
-      loading: false
+      loading: false,
+      page: 1
     }
   }
 
   async componentDidMount(){
-    const url = 'https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb';
+    let url = 'https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page1&pageSize=9';
     // console.log('url')
-    const data = await fetch(url);
-    const parsedData = await data.json();
+    let data = await fetch(url);
+    let parsedData = await data.json();
     // console.log(parsedData);
-    this.setState({articles: parsedData.articles});
+    this.setState({
+      articles: parsedData.articles,
+      totalResults: parsedData.totalResults
+    });
+  }
+
+  handlePrevCLick = async ()=>{
+    console.log('prev')
+    let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page - 1}&pageSize=9`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      page: this.state.page - 1,
+      articles: parsedData.articles
+    })
+
+  }
+  
+  handleNextCLick = async ()=>{
+    console.log('next')
+
+    if(this.state.page +1 > Math.ceil(this.state.totalResults/9)){
+    }
+    else{
+      let url = `https://newsapi.org/v2/top-headlines?q=covid&from=2023-05-02&to=2023-05-02&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page + 1}&pageSize=9`;
+      let data = await fetch(url);
+      let parsedData = await data.json();
+      this.setState({
+        page: this.state.page + 1,
+        articles: parsedData.articles
+      })
+      console.log('hnext')
+    }
   }
 
   render() {
     // console.log('ren')  
     return (
-      <div>
         <div className="container my-3">
             <h2>News Spider - Top Headlines</h2>
             <div className="row">
@@ -220,8 +254,11 @@ export class News extends Component {
                   </div>
                 })}
             </div>
+            <div className="d-flex justify-content-between">
+              <button type="button" disabled={this.state.page<=1} className="btn btn-primary" onClick={this.handlePrevCLick}>&larr; Previous</button>
+              <button type="button" className="btn btn-primary" onClick={this.handleNextCLick}>Next &rarr;</button>
+            </div>
         </div>
-      </div>
     )
   }
 }
