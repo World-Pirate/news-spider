@@ -79,7 +79,7 @@
             "id": "usa-today",
             "name": "USA Today"
         },
-        "author": null, 
+        "author": null,
         "title": "'Multiple fatalities,' injuries after dust storm causes massive pile-up on Illinois' I-55",
         "description": "Multiple fatalities expected, dozens hurt after dust storm causes pileup on Illinois' Interstate 55, closing traffic for 30 miles in both directions.",
         "url": "https://www.usatoday.com/story/news/nation/2023/05/01/illinois-dust-storm-causes-massive-pileup-closes-traffic-for-30-miles/70172073007/",
@@ -184,3 +184,249 @@
         "content": "Ravi Bishnoi return on the cards?\r\nDeepak Hooda showed what he is capable of, but greater consistency would be needed from him if the team has to prosper. They bet on Australian pace imports Jhye Ric… [+3131 chars]"
     }]
 }
+
+// {
+//     "status": "ok",
+//     "totalResults": 24,
+//     "articles": [{
+//         "source": {
+//             "id": "techcrunch",
+//             "name": "TechCrunch"
+//         },
+//         "author": "Natasha Mascarenhas",
+//         "title": "A comprehensive list of 2023 tech layoffs",
+//         "description": "Here you’ll find a complete list of all the known layoffs in tech, from Big Tech to startups, broken down by month throughout 2023.",
+//         "url": "https://techcrunch.com/2023/05/05/tech-industry-layoffs/",
+//         "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/02/layoffs.jpg?resize=1200,645",
+//         "publishedAt": "2023-05-05T15:06:53Z",
+//         "content": "Last years techwidereckoning continues. In 2023, layoffs have yet again cost tens of thousands of tech workers their jobs; this time, the workforce reductions have been driven by the biggest names in… [+13783 chars]"
+//     }, {
+//         "source": {
+//             "id": "reuters",
+//             "name": "Reuters"
+//         },
+//         "author": null,
+//         "title": "Meta Platforms scoops up AI networking chip team from Graphcore",
+//         "description": "Meta Platforms Inc <a href=\"https://www.reuters.com/companies/META.O\" target=\"_blank\">(META.O)</a> has hired an Oslo-based team that until late last year was building artificial-intelligence networking technology at British chip unicorn Graphcore.",
+//         "url": "https://www.reuters.com/technology/meta-platforms-scoops-up-ai-networking-chip-team-graphcore-2023-05-05/",
+//         "urlToImage": "https://www.reuters.com/resizer/8g5tZ20Sbn0AThhkzgz3v_o1wMA=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/WBUVTOEJBFKNFAXZSYE544RLH4.jpg",
+//         "publishedAt": "2023-05-05T13:31:56Z",
+//         "content": "May 5 (Reuters) - Meta Platforms Inc (META.O) has hired an Oslo-based team that until late last year was building artificial-intelligence networking technology at British chip unicorn Graphcore.\r\nA M… [+4044 chars]"
+//     }, {
+//         "source": {
+//             "id": "rtl-nieuws",
+//             "name": "RTL Nieuws"
+//         },
+//         "author": "RTL Nieuws",
+//         "title": "Deze verkooptruc zorgt ervoor dat je ongemerkt meer geld uitgeeft",
+//         "description": "De nettowinst van Starbucks is het afgelopen kwartaal met bijna 35 procent gestegen. Dit lukt de koffieketen mede door gebruik te maken van 'upsellen', een techniek waarbij je als bedrijf allerlei extraatjes verkoopt voor meer omzet. Zonder dat je het als con…",
+//         "url": "https://www.rtlnieuws.nl/nieuws/video/video/5382390/de-verkooptruc-van-menig-koffiezaak-nog-wat-lekkers-erbij",
+//         "urlToImage": "https://screenshots.rtl.nl/system/thumb/sz=720x404/uuid=3dfb51d9-48bd-4b6d-bd6e-a499b256d3b4",
+//         "publishedAt": "2023-05-05T09:52:25.7980307Z",
+//         "content": "De nettowinst van Starbucks is het afgelopen kwartaal met bijna 35 procent gestegen. Dit lukt de koffieketen mede door gebruik te maken van 'upsellen', een techniek waarbij je als bedrijf allerlei ex… [+280 chars]"
+//     }, {
+//         "source": {
+//             "id": "gruenderszene",
+//             "name": "Gruenderszene"
+//         },
+//         "author": null,
+//         "title": "Ihr leidet unter Haarausfall? Diese Gründer wollen das Wundermittel gefunden haben",
+//         "description": "Die Gründer haben eine technische Methode entwickelt, die Haarstammzellen reaktivieren kann. Das Gerät könnte den Markt revolutionieren.",
+//         "url": "https://www.businessinsider.de/gruenderszene/health/haarausfall-wundermittel-niostem/",
+//         "urlToImage": "https://cdn.businessinsider.de/wp-content/uploads/2023/05/Niostem_Gruender-800x533.jpg",
+//         "publishedAt": "2023-05-05T09:08:30+00:00",
+//         "content": "Emil Aliev hat dichtes, dunkles Haar. An den Seiten trägt er es absichtlich kürzer für den Undercut. Dass der Kölner mit Niostem 2021 ein Startup gegründet hat, um Haarausfall zu bekämpfen, überrasch… [+1234 chars]"
+//     }, {
+//         "source": {
+//             "id": "bloomberg",
+//             "name": "Bloomberg"
+//         },
+//         "author": "Bloomberg",
+//         "title": "JPMorgan Sees Investors Moving to Gold, Tech Amid Recession Risk",
+//         "description": null,
+//         "url": "https://news.google.com/rss/articles/CBMicmh0dHBzOi8vd3d3LmJsb29tYmVyZy5jb20vbmV3cy9hcnRpY2xlcy8yMDIzLTA1LTA1L2pwbW9yZ2FuLXNlZXMtaW52ZXN0b3JzLW1vdmluZy10by1nb2xkLXRlY2gtYW1pZC1yZWNlc3Npb24tcmlza9IBAA?oc=5",
+//         "urlToImage": null,
+//         "publishedAt": "2023-05-05T04:55:00+00:00",
+//         "content": null
+//     }, {
+//         "source": {
+//             "id": "techcrunch",
+//             "name": "TechCrunch"
+//         },
+//         "author": "Natasha Mascarenhas",
+//         "title": "Aaron Burr's tech angle, blue skies, and no photos at this time",
+//         "description": "Alex, Natasha and Mary Ann talk about Finix's Stripes, blue skies and paparazzi all in the realm of a busier-than-usual tech cycles.",
+//         "url": "https://techcrunch.com/2023/05/05/aaron-burrs-tech-angle-blue-skies-and-no-photos-at-this-time/",
+//         "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/08/equity-podcast-2019-phone.jpg?resize=1200,675",
+//         "publishedAt": "2023-05-05T01:05:31Z",
+//         "content": "Hello, and welcome back to Equity, a podcast about the business of startups, where we unpack the numbers and nuance behind the headlines.\r\nThis week Mary Ann, Natasha and Alex got right into it – may… [+1321 chars]"
+//     }, {
+//         "source": {
+//             "id": "gruenderszene",
+//             "name": "Gruenderszene"
+//         },
+//         "author": null,
+//         "title": "Das steckt hinter dem neuen Startup von Gorillas-Gründer Kagan Sümer",
+//         "description": "Kagan Sümer hat mit Gorillas einen Milliarden-Hype erschaffen. Jetzt baut er das Healthtech Mirror. Vorbild ist ein Berliner Startup.",
+//         "url": "https://www.businessinsider.de/gruenderszene/health/kagan-suemer-startup-health-blut-mirror/",
+//         "urlToImage": "https://cdn.businessinsider.de/wp-content/uploads/2023/05/202305_GS_Artikel_Bluttest_1800x1200.jpg?ver=1683130052",
+//         "publishedAt": "2023-05-05T00:55:00+00:00",
+//         "content": "Bei Gorillas ist er seit Ende letzten Jahres raus, also seit dem Verkauf an den Konkurrenten Getir. Jetzt steht Kagan Sümer schon mit der nächsten Firma in den Startlöchern, dieses Mal im Bereich Ges… [+936 chars]"
+//     }, {
+//         "source": {
+//             "id": "techcrunch",
+//             "name": "TechCrunch"
+//         },
+//         "author": "Rebecca Szkutak",
+//         "title": "Down rounds are a 'ticket to try again,' says founder who raised 3 in a row",
+//         "description": "Russ Wilcox, founder of E Ink, recently joined TechCrunch's Found podcast to talk about how he raised multiple down rounds before a successful exit.",
+//         "url": "https://techcrunch.com/2023/05/05/down-rounds-are-not-bad/",
+//         "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1431116960.jpg?resize=1200,800",
+//         "publishedAt": "2023-05-04T23:53:31Z",
+//         "content": "For the past year, everyones been predicting that the muted exit environment and bone-dry funding market would bring a reckoning for many late-stage companies.\r\nWeve been seeing layoffs and cost-cutt… [+1878 chars]"
+//     }, {
+//         "source": {
+//             "id": "techcrunch",
+//             "name": "TechCrunch"
+//         },
+//         "author": "Natasha Mascarenhas",
+//         "title": "OpenAI’s ChatGPT is shaking up the edtech markets",
+//         "description": "Chegg’s dramatic post-earnings valuation flop will not be the last time that we see new AI tooling run headlong into existing enterprises.",
+//         "url": "https://techcrunch.com/2023/05/05/openai-chatgpt-chegg-edtech/",
+//         "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/01/GettyImages-1263424631.jpg?resize=1200,800",
+//         "publishedAt": "2023-05-04T22:44:29Z",
+//         "content": "Shares of edtech company Chegg fell off a cliff this week after the company reported Q1 results that bested analyst expectations.\r\nBut Q1s results arent what made the company lose nearly half of its … [+875 chars]"
+//     }, {
+//         "source": {
+//             "id": "the-verge",
+//             "name": "The Verge"
+//         },
+//         "author": "Justine Calma",
+//         "title": "Meet the fossil fuel-funded startup trying to take CO2 out of the ocean",
+//         "description": "Climate tech startup Captura wants to filter carbon dioxide out of the ocean. It has a new pilot plant in California, but some environmental groups are already worried about the nascent technology.",
+//         "url": "http://www.theverge.com/2023/5/4/23711098/ocean-carbon-removal-california-captura-climate-change",
+//         "urlToImage": "https://cdn.vox-cdn.com/thumbor/GEGNXFKkR2SadCywd98TBbhkEo0=/0x0:1600x810/1200x628/filters:focal(800x405:801x406)/cdn.vox-cdn.com/uploads/chorus_asset/file/24633351/2021_1117_Captura_Desktop_no.2e16d0ba.fill_1600x810_c100.jpg",
+//         "publishedAt": "2023-05-04T21:18:27Z",
+//         "content": "Meet the fossil fuel-funded startup trying to take CO2 out of the ocean\r\nMeet the fossil fuel-funded startup trying to take CO2 out of the ocean\r\n / Can filtering carbon dioxide out of the ocean help… [+6811 chars]"
+//     }, {
+//         "source": {
+//             "id": "next-big-future",
+//             "name": "Next Big Future"
+//         },
+//         "author": "Brian Wang",
+//         "title": "NASA Funds Icon 3D Homes for Lunar and Mars Construction | NextBigFuture.com",
+//         "description": "Icon is developing the Olympus’ printing technology processes to turn local lunar regolith (moon dust) into a super strong building material using only energy",
+//         "url": "https://www.nextbigfuture.com/2023/05/nasa-funds-icon-3d-homes-for-lunar-and-mars-construction.html",
+//         "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/05/Screen-Shot-2023-05-04-at-1.20.14-PM.jpg",
+//         "publishedAt": "2023-05-04T20:30:41Z",
+//         "content": "Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology… [+593 chars]"
+//     }, {
+//         "source": {
+//             "id": "time",
+//             "name": "Time"
+//         },
+//         "author": "Justin Worland",
+//         "title": "Jigar Shah Is Using His $400 Billion Checkbook to Rapidly Scale Up Clean Tech",
+//         "description": "Financing the energy transition is a massive conundrum. Jigar Shah can provide a key puzzle piece—for the businesses that work with him.",
+//         "url": "http://time.com/6277072/jigar-shah-interview-climate-tech/",
+//         "urlToImage": "https://api.time.com/wp-content/uploads/2023/05/jigar-shah-doe-loan-program-office.jpg?quality=85&w=1024&h=628&crop=1",
+//         "publishedAt": "2023-05-04T17:35:56Z",
+//         "content": "(To get this story in your inbox, subscribe to the TIME CO2 Leadership Report newsletter here.)\r\nFiguring out how to finance the energy transition is a massive conundrum. The International Energy Age… [+4946 chars]"
+//     }, {
+//         "source": {
+//             "id": "the-next-web",
+//             "name": "The Next Web"
+//         },
+//         "author": "Siôn Geschwindt",
+//         "title": "UK competition watchdog probes AI market amid safety concerns",
+//         "description": "The UK’s competition watchdog has launched a review of the artificial intelligence market, in an effort to weigh up the potential opportunities and risks of a technology Bill Gates ...",
+//         "url": "http://thenextweb.com/news/uk-competition-watchdog-probes-ai-market-amid-safety-concerns",
+//         "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F05%2FUK-watchdog-AI-review-CMA.jpg&signature=c24c7f320fbbf29ddda3d50c25fec3a2",
+//         "publishedAt": "2023-05-04T14:31:04Z",
+//         "content": "The UKs competition watchdog has launched a review of the artificial intelligence market, in an effort to weigh up the potential opportunities and risks of a technology Bill Gates dubs as revolutiona… [+4064 chars]"
+//     }, {
+//         "source": {
+//             "id": "recode",
+//             "name": "Recode"
+//         },
+//         "author": "Sigal Samuel",
+//         "title": "Can new brain-computer interface technology read your thoughts?",
+//         "description": "An AI-powered “brain decoder” can now decode your thoughts with surprising accuracy",
+//         "url": "https://www.vox.com/future-perfect/2023/5/4/23708162/neurotechnology-mind-reading-brain-neuralink-brain-computer-interface",
+//         "urlToImage": "https://cdn.vox-cdn.com/thumbor/TMxQDVRgBqrryTqSJvjGaGp2J-g=/0x287:4000x2381/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24631072/tang_prepping_mri_participant_full.jpg",
+//         "publishedAt": "2023-05-04T11:30:00Z",
+//         "content": "For a few years now, Ive been writing articles on neurotechnology with downright Orwellian headlines. Headlines that warn Facebook is building tech to read your mind and Brain-reading tech is coming.… [+7322 chars]"
+//     }, {
+//         "source": {
+//             "id": "techcrunch",
+//             "name": "TechCrunch"
+//         },
+//         "author": "Lauren Simonds",
+//         "title": "TechCrunch Disrupt early-bird savings end in 7 days",
+//         "description": "Your chance to save $800 on passes to TechCrunch Disrupt 2023 ends in just seven days on May 12. Don’t miss out on a great deal!",
+//         "url": "https://techcrunch.com/2023/05/05/early-bird-savings-end-seven-days-techcrunch-disrupt-2023/",
+//         "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/05/Countdown-Article-Image-Header_1-week_1920x1080.jpg?resize=1200,675",
+//         "publishedAt": "2023-05-03T19:40:27Z",
+//         "content": "Most early-stage startup founders, investors, technologists and all-around aficionados recognize and appreciate a great deal. Were flagging this one, folks, because you have just one week left to tak… [+4122 chars]"
+//     }, {
+//         "source": {
+//             "id": "medical-news-today",
+//             "name": "Medical News Today"
+//         },
+//         "author": "Deep Shukla",
+//         "title": "Earbud-like wearable tech could help identify Alzheimer's and Parkinson's",
+//         "description": "Scientists in Denmark are developing an easy-to-use wearable in-ear EEG device to monitor sleep patterns at home and enable widespread screening for Alzheimer's and Parkinson's.",
+//         "url": "http://www.medicalnewstoday.com/articles/earbud-like-wearable-tech-could-identify-alzheimers-parkinsons",
+//         "urlToImage": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2023/05/Alzheimers-Parkinsons-ear-732x549-thumbnail.jpg",
+//         "publishedAt": "2023-05-03T15:30:00Z",
+//         "content": "<ul><li>Alzheimers and Parkinsons are neurodegenerative diseases that gradually worsen over time. There is currently a lack of effective treatments for both conditions.</li><li>Early diagnoses using … [+8347 chars]"
+//     }, {
+//         "source": {
+//             "id": "recode",
+//             "name": "Recode"
+//         },
+//         "author": "Phil Edwards, Jayne A. Quan",
+//         "title": "Why this AI art took 17 hours to make",
+//         "description": "Making AI art isn’t always as simple as typing a prompt and waiting for results. Photoshop and traditional art techniques are still required to make something truly unique.",
+//         "url": "https://www.vox.com/videos/2023/5/2/23708076/ai-artist-stelfie-process-workflow",
+//         "urlToImage": "https://cdn.vox-cdn.com/thumbor/G4ug5g9yXqGF5aSY0aPCIpHQ63E=/0x38:1920x1043/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24627365/VDC_AIX_004_stelfie_THUMB_SYN.jpg",
+//         "publishedAt": "2023-05-02T19:40:49Z",
+//         "content": "How does an AI artist maintain consistency with a recurring character? While AI art may appear to involve just a few clicks, it can be quite time-consuming.\r\nThe video above demonstrates the abridged… [+832 chars]"
+//     }, {
+//         "source": {
+//             "id": "newsweek",
+//             "name": "Newsweek"
+//         },
+//         "author": "Mark Davis",
+//         "title": "Newsweek",
+//         "description": "Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",
+//         "url": "https://www.newsweek.com/",
+//         "urlToImage": "https://d.newsweek.com/en/full/2202468/special-presidential-envoy-climate-john-kerry.jpg",
+//         "publishedAt": "2023-03-01T12:07:28.8517009Z",
+//         "content": null
+//     }, {
+//         "source": {
+//             "id": "new-scientist",
+//             "name": "New Scientist"
+//         },
+//         "author": null,
+//         "title": "High-tech research ship ready to seek new life at hydrothermal vents",
+//         "description": "The Falkor (too), a 100-metre, state-of-the-art research vessel, is scheduled to set sail on 3 March to look for hydrothermal vents and undiscovered organisms, potentially shedding light on how life may have arisen on other planets",
+//         "url": "https://www.newscientist.com/article/2361810-high-tech-research-ship-ready-to-seek-new-life-at-hydrothermal-vents/",
+//         "urlToImage": "https://images.newscientist.com/wp-content/uploads/2023/02/28142658/SEI_146075053.jpg",
+//         "publishedAt": "2023-03-01T00:00:00Z",
+//         "content": "By Ashley Balzer Vigil\r\nThe research vessel Falkor (too) will head to the mid-Atlantic ridge to seek hydrothermal vents\r\nAlex Ingle/Schmidt Ocean Institute\r\nThe most advanced research vessel ever is … [+413 chars]"
+//     }, {
+//         "source": {
+//             "id": "spiegel-online",
+//             "name": "Spiegel Online"
+//         },
+//         "author": "Spiegel Online",
+//         "title": "Neuer Quds-Kommandeur Ghaani: Technokrat des Terrors",
+//         "description": "Der iranische Topgeneral Qasem Soleimani war keine 24 Stunden tot, da präsentierte Iran seinen Nachfolger: Ismail Ghaani. Warum der die Schattenkrieger der Quds-Brigade anders führen wird - ihr Ziel aber das gleiche bleibt.",
+//         "url": "http://www.spiegel.de/politik/ausland/iran-ismail-ghaani-ist-neuer-chef-der-quds-brigade-a-1303791.html",
+//         "urlToImage": "https://cdn1.spiegel.de/images/image-1503554-860_poster_16x9-uduu-1503554.jpg",
+//         "publishedAt": "2020-01-07T18:09:00Z",
+//         "content": "Dienstag, 07.01.2020  \r\n19:09 Uhr\r\nDer Mann, den das iranische Staatsfernsehen am Montag zeigt, trägt eine schlichte olivgrüne Uniform, er weint, kniet sich nieder - und küsst den vor ihm aufgebarten… [+4031 chars]"
+//     }]
+// }
