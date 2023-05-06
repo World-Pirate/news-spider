@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <News category={'sports'} country={'in'} pageSize={12}/>
+      <News category={'sports'} country={'in'} pageSize={25}/>
 
       {/* <Router>
           <Navbar />

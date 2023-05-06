@@ -31,20 +31,8 @@ export class News extends Component {
     }
   }
 
-  // async updatenews(){
-  //   let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&country=${this.props.country}&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page1&pageSize=${this.props.pageSize}`;
-  //   this.setState({loading: true});
-  //   let data = await fetch(url);
-  //   let parsedData = await data.json();
-  //   this.setState({
-  //     articles: parsedData.articles,
-  //     totalResults: parsedData.totalResults,
-  //     loading: false
-  //   });
-  // }
-
-  async componentDidMount(){
-    let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&country=${this.props.country}&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page1&pageSize=${this.props.pageSize}`;
+  async updatenews(){
+    const url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&country=${this.props.country}&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({loading: true});
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -53,35 +41,20 @@ export class News extends Component {
       totalResults: parsedData.totalResults,
       loading: false
     });
-    // this.updatenews();
+  }
+
+  async componentDidMount(){
+    this.updatenews();
   }
 
   handlePrevCLick = async ()=>{
-    let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&country=${this.props.country}&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
-    this.setState({loading: true});
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    this.setState({
-      page: this.state.page - 1,
-      articles: parsedData.articles,
-      loading: false
-    })
-    // this.setState({page: this.state.page-1});
-    // this.updatenews();
+    await this.setState({page: this.state.page-1});
+    this.updatenews();
   }
   
   handleNextCLick = async ()=>{
-      let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&country=${this.props.country}&sortBy=popularity&apiKey=56f164ae46b74c39914c176a020f49fb&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
-      this.setState({loading: true});
-      let data = await fetch(url);
-      let parsedData = await data.json();
-      this.setState({
-        page: this.state.page + 1,
-        articles: parsedData.articles,
-        loading: false
-      })
-    // this.setState({page: this.state.page+1});
-    // this.updatenews();
+    await this.setState({page: this.state.page+1});
+    this.updatenews();
   }
 
   render(){
@@ -89,7 +62,7 @@ export class News extends Component {
         <div className="container my-3">
             <h1 className="text-center my-4">News Spider - Top Headlines</h1>
             {this.state.loading && <Loading/>}
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between my-1">
               <button type="button" disabled={this.state.page<=1} className="btn btn-primary" onClick={this.handlePrevCLick}>&larr; Previous</button>
               <button type="button" disabled={this.state.page+1 > Math.ceil(this.state.totalResults / this.props.pageSize)} className="btn btn-primary" onClick={this.handleNextCLick}>Next &rarr;</button>
             </div>
@@ -101,6 +74,11 @@ export class News extends Component {
                   </div>
                 })}
             </div>
+            <div className="d-flex justify-content-between my-1">
+              <button type="button" disabled={this.state.page<=1} className="btn btn-primary" onClick={this.handlePrevCLick}>&larr; Previous</button>
+              <button type="button" disabled={this.state.page+1 > Math.ceil(this.state.totalResults / this.props.pageSize)} className="btn btn-primary" onClick={this.handleNextCLick}>Next &rarr;</button>
+            </div>
+
         </div>
     )
   }
