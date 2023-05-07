@@ -52,6 +52,7 @@ export class News extends Component {
     this.updatenews();
   }
   
+  
   handleNextCLick = async ()=>{
     await this.setState({page: this.state.page+1});
     this.updatenews();
